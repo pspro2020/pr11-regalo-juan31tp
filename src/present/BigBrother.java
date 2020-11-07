@@ -17,7 +17,7 @@ public class BigBrother implements Runnable{
     }
 
     public void countMoney(String name, int cash) {
-        System.out.printf(LocalTime.now().format(dtf) + " -> The alumn " + name + " gave " + cash + " + \n");
+        System.out.printf(LocalTime.now().format(dtf) + " -> The alumn " + name + " gave " + cash + " \n");
         for (int i=0; i<cash;i++){
             countDownLatch.countDown();
         }
