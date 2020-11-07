@@ -28,10 +28,10 @@ public class Alumn implements Runnable {
 
     private int gainMoney() {
         try {
-            TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(8)+3);
+            TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(10)+3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return ThreadLocalRandom.current().nextInt(3)+2;
+        return ThreadLocalRandom.current().nextInt(5)+2;
     }
 }
